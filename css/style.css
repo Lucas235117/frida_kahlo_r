@@ -310,7 +310,7 @@ body {
           transform: translate(0%, -50%);
   width: 100%;
   text-align: center;
-  font-size: calc(2.5vw + 20px);
+  font-size: calc(2vw + 10px);
   font-weight: 200;
   z-index: 150;
 }
@@ -320,6 +320,9 @@ body {
   align-items: center;
 }
 @media only screen and (max-width: 445px){
+  .nav__content {
+    font-size: calc(2.5vw + 20px);
+  }
   .nav__list{
     flex-direction: column;
   }
