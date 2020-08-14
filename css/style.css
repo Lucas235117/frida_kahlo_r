@@ -19,7 +19,7 @@ body {
     align-items: center;
 }
 .mouse-parallax__background {
-    background: url("../img/frida-bg.jpg") center/cover;
+    background: url("../img/frida_bg-min.jpg") center/cover;
     position: absolute;
     width: 110%;
     height: 110%;
@@ -35,11 +35,11 @@ body {
 }
 .logo{
     position: fixed;
-    height: 200px;
-    width: 200px;
+    height: 230px;
+    width: 265px;
     z-index: 111;
-    left: 65px;
-    top: 25px;
+    left: 6rem;
+    top: 65px;
 }
 
 .responsive-img{
@@ -72,7 +72,8 @@ body {
 
 @media only screen and (max-width: 445px){
   .logo{
-    left: 0;
+    left: -30px;
+    top: 52px;
   }
   .responsive-img{
     width: 60%;
@@ -102,8 +103,6 @@ body {
 }
 
 /* Pre loader */
-  
-  /* The Loader */
   #loader-wrapper {
     position: fixed;
     top: 0;
@@ -120,87 +119,21 @@ body {
   #loader {
     display: block;
     position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
+    left: 49%;
+    top: 45%;
+    width: 200px;
+    height: 200px;
     margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #a12424;
-    -webkit-animation: spin 1.7s linear infinite;
-            animation: spin 1.7s linear infinite;
     z-index: 11;
-  }
-  #loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #e4e4e4;
-    -webkit-animation: spin-reverse .8s linear infinite;
-            animation: spin-reverse .8s linear infinite;
-  }
-  #loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #a12424;
-    -webkit-animation: spin 2.2s linear infinite;
-            animation: spin 2.2s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  @keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  @-webkit-keyframes spin-reverse {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(-360deg);
-    }
-  }
-  @keyframes spin-reverse {
-    0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(-360deg);
-      transform: rotate(-360deg);
-    }
+    background-image: url('../img/logo-1.png');
+    background-size: cover;
   }
   #loader-wrapper .loader-section {
     position: fixed;
     top: 0;
     width: 51%;
     height: 100%;
-    background: rgb(17, 17, 17);
+    background: rgb(255, 255, 255);
     z-index: 10;
   }
   
@@ -251,7 +184,7 @@ body {
   top: 75px;
   cursor: pointer;
 }
-@media only screen and (max-width: 515px){
+@media only screen and (max-width: 445px){
   .menu-icon {
     left: 80%;
   }
@@ -342,7 +275,7 @@ body {
   transition: opacity .2s ease, -webkit-transform .3s ease;
   transition: opacity .2s ease, transform .3s ease;
   transition: opacity .2s ease, transform .3s ease, -webkit-transform .3s ease;
-  margin-right: 25px;
+  margin-right: 35px;
 }
 .nav__list-item img{
   width: 170px;
@@ -428,8 +361,4 @@ body.nav-active .nav__list-item:nth-child(4) {
 body.nav-active .nav__list-item:nth-child(5) {
   -webkit-transition-delay: 1.2s;
           transition-delay: 1.2s;
-}
-body.nav-active .nav__list-item:nth-child(6) {
-  -webkit-transition-delay: 1.3s;
-          transition-delay: 1.3s;
 }

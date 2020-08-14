@@ -41,7 +41,7 @@
     // Fakes the loading setting a timeout
       setTimeout(function() {
           $('body').addClass('loaded');
-      }, 1300);
+      }, 900);
    
   });
   
