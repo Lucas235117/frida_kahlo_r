@@ -119,11 +119,10 @@ body {
   #loader {
     display: block;
     position: relative;
-    left: 49%;
-    top: 45%;
+    top: 40%;
     width: 200px;
     height: 200px;
-    margin: -75px 0 0 -75px;
+    margin: -75px auto 0 auto;
     z-index: 11;
     background-image: url('../img/logo-1.png');
     background-size: cover;
