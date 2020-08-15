@@ -1,3 +1,12 @@
+  // Pre loader
+  $(document).ready(function() {
+    // Fakes the loading setting a timeout
+      setTimeout(function() {
+          $('body').addClass('loaded');
+      }, 900);
+   
+  });
+  
   // Efecto de fondo
   $('.mouse-parallax').on('mousemove', (e) => {
     const x = e.pageX / $(window).width()
@@ -17,6 +26,7 @@
     const init = () => {
       body = document.querySelector('body');
       menu = document.querySelector('.menu-icon');
+      menu_svg = document.querySelector('.menu-icon-svg-cont');
       menuItems = document.querySelectorAll('.nav__list-item');
   
       applyListeners();
@@ -24,6 +34,7 @@
   
     const applyListeners = () => {
       menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
+      menu_svg.addEventListener('click', () => toggleClass(body, 'nav-active'));
     };
   
     const toggleClass = (element, stringClass) => {
@@ -36,12 +47,4 @@
     init();
   })();
 
-  // Pre loader
-  $(document).ready(function() {
-    // Fakes the loading setting a timeout
-      setTimeout(function() {
-          $('body').addClass('loaded');
-      }, 900);
-   
-  });
   
